@@ -328,6 +328,7 @@ def main():
         if remain == 0:
             print("***NOTE***")
             print("ALL genes in the dataset have been recruited")
+            return 0
         
 
 
