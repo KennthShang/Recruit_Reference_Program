@@ -209,6 +209,7 @@ def reference_remain():
     with open("new_data.fa") as file:
         number = len(file.readlines())//2
         print("Total gene remained in the dataset is: ", number)
+        return number
 
 Program_name = """
 
@@ -323,7 +324,10 @@ def main():
         print("new sub-dataset created!")
         os.system("rm LogFile")
         print("****NOTE****")
-        reference_remain()
+        remain = reference_remain()
+        if remain == 0:
+            print("***NOTE***")
+            print("ALL genes in the dataset have been recruited")
         
 
 
