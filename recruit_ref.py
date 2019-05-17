@@ -216,7 +216,7 @@ Program_name = """
 
    =========================  RRP  ==========================
                     Recruit Refernece Program
-                            V1.0.0
+                            V1.1.0
           Contact: Kenneth Shang <kenneth.shang@foxmail.com>
    ----------------------------------------------------------
 
