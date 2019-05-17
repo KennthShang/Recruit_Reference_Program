@@ -329,12 +329,14 @@ def main():
         if remain == 0:
             print("***NOTE***")
             print("ALL genes in the dataset have been recruited")
+            os.system("rm -rf Ref/ Idx/ | mv new_data.fa data_remain.fa")
             return 0
+    os.system("rm -rf Ref/ Idx/ | mv new_data.fa data_remain.fa")
         
 
 
 if __name__ == "__main__":
     print(Program_name)
     main()
-    os.system("rm -rf Ref/ Idx/ | mv new_data.fa data_remain.fa")
+    
         
